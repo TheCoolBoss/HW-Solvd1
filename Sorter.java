@@ -2,6 +2,7 @@ public class Sorter
 {
     public static void main(String[] args)
     {
+        //Bubble sort
         int[] testArr = {5, 7, 4, 3, 2, 10, 1, 5};
         int[] arr = new int[args.length];
         for (int i = 0; i < args.length; i++) 
