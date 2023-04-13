@@ -7,7 +7,16 @@ public class Sorter
         int[] arr = new int[args.length];
         for (int i = 0; i < args.length; i++) 
         {
-            arr[i] = Integer.parseInt(args[i]);
+            try 
+            {
+                arr[i] = Integer.parseInt(args[i]);
+            } 
+            catch (NumberFormatException nfe) 
+            {
+                System.out.println("Can't convert " + args[i] + " to an int. Defaulting to 0. :(");
+                arr[i] = 0;
+            }
+            
         }
         boolean done = false;
 
